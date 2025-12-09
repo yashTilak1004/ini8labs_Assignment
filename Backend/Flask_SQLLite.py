@@ -1,8 +1,10 @@
 from flask import Flask, jsonify, request
+from flask_cors import CORS
 import sqlite3
 import os
 
 app = Flask(__name__)
+CORS(app)
 
 def get_db_connection():
     conn = sqlite3.connect('PDF_Table.db')
@@ -29,7 +31,7 @@ def Insert_File():
 
     # Validate inputs
     if not pdf_file or not file_path:
-        return 400 #one of the 2 inputs is empty.
+        return "Missing file or file path", 400 #one of the 2 inputs is empty.
 
     if not pdf_name:
         pdf_name = pdf_file.filename
@@ -53,7 +55,7 @@ def Insert_File():
     conn.commit()
     conn.close()
     
-    return 201
+    return "File uploaded successfully", 201
 
 #3. Delete
 @app.route("/delete", methods=["POST"])
@@ -83,4 +85,4 @@ def Delete_File():
     return 200
 
 if __name__ == "__main__":
-    app.run(debug=True)    
+    app.run(debug=True,port=8001)    
