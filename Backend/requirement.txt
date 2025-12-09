@@ -1,0 +1,16 @@
+1. get table data
+2. insert pdf in Pdffolder
+2.a insert the pdf status into table
+2.b when removing a pdf,remove it from table as well.
+2.c ability to download said file
+
+
+1."""
+CREATE TABLE pdf_files (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    pdf_name TEXT NOT NULL,
+    insertion_date TEXT DEFAULT (datetime('now')),
+    folder_path TEXT NOT NULL
+);
+"""
+
