@@ -9,7 +9,7 @@
     c. Open ini8labs_Assignment folder.
     d. Then open Backend.
     e. Open terminal or git bash or command prompt and execute this command: "python -m venv venv"
-    f. Execute "\venv\Scripts\activate.bat"
+    f. Execute "venv\Scripts\activate"
     g. Execute "pip install -r requirement.txt"
     h. Execute "python Flask_SQLLite.py". Now the backend server is active.(exposed in localhost:8001)
 
