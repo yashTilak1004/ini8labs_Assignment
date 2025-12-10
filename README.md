@@ -1,7 +1,7 @@
 1. Project Overview:
-    a. A single page application for a single user to store,insert,delete,view and download pdfs.
-    b. Utilises Reactjs for frontend and Flask for Backend.
-    c. Sqllite3 for database and local folder(s) for storing pdfs.
+    \na. A single page application for a single user to store,insert,delete,view and download pdfs.
+    \nb. Utilises Reactjs for frontend and Flask for Backend.
+    \nc. Sqllite3 for database and local folder(s) for storing pdfs.
 
 2. To run this full stack application in local machine:
     a. Open git bash or command prompt or terminal.
