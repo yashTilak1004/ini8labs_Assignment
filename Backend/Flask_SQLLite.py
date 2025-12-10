@@ -105,10 +105,6 @@ def Delete_File():
 
 @app.route("/host-pdf", methods=["POST"])
 def host_pdf():
-    """
-    Expects JSON: { "path": "/absolute/path/to/file.pdf" }
-    Returns JSON: { "url": "<external_url_to_serve_pdf>" }
-    """
     path = request.form.get("Absolute file path")
     print(path)
     if not path:
