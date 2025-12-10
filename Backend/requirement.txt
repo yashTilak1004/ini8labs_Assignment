@@ -13,4 +13,4 @@ CREATE TABLE pdf_files (
     folder_path TEXT NOT NULL
 );
 """
-
+2. "DELETE FROM pdf_files"
